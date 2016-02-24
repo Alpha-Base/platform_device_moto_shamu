@@ -24,6 +24,16 @@ ENABLE_CPUSETS := true
 
 TARGET_NO_BOOTLOADER := true
 
+# Uber Optimizations
+export CLANG_O3 := true
+export STRICT_ALIASING := false
+export KRAIT_TUNINGS := true
+export GRAPHITE_OPTS := false
+export ENABLE_GCCONLY := true
+
+# Rom Toolchain
+TARGET_GCC_VERSION_EXP := 5.3
+
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
